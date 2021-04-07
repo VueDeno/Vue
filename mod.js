@@ -5687,12 +5687,12 @@ const isTextInputType = makeMap('text,number,password,search,email,tel,url');
  */
 function query (el) {
   if (typeof el === 'string') {
-    const selected = document.querySelector(el);
+    let selected;//= document.querySelector(el);
     if (!selected) {
       warn(
         'Cannot find element: ' + el
       );
-      return document.createElement('div')
+      return// document.createElement('div')
     }
     return selected
   } else {
@@ -5703,7 +5703,7 @@ function query (el) {
 /*  */
 
 function createElement$1 (tagName, vnode) {
-  const elm = document.createElement(tagName);
+  let elm ;//= document.createElement(tagName);
   if (tagName !== 'select') {
     return elm
   }
@@ -5715,15 +5715,15 @@ function createElement$1 (tagName, vnode) {
 }
 
 function createElementNS (namespace, tagName) {
-  return document.createElementNS(namespaceMap[namespace], tagName)
+  return //document.createElementNS(namespaceMap[namespace], tagName)
 }
 
 function createTextNode (text) {
-  return document.createTextNode(text)
+  return //document.createTextNode(text)
 }
 
 function createComment (text) {
-  return document.createComment(text)
+  return //document.createComment(text)
 }
 
 function insertBefore (parentNode, newNode, referenceNode) {
@@ -11933,10 +11933,10 @@ Vue.prototype.$mount = function (
   el,
   hydrating
 ) {
-  el = el && query(el);
+  el////&& query(el);
 
   /* istanbul ignore if */
-  if (el === document.body || el === document.documentElement) {
+  if (el){// === document.body || el === document.documentElement) {
     warn(
       `Do not mount Vue to <html> or <body> - mount to normal elements instead.`
     );
