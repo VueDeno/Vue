@@ -4,7 +4,9 @@
 
 # app
 
-This package offers app for vno server-side rendering
+This package offers app for vno server-side rendering.
+
+It's similiar to https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js but for Vno
 
 
 
@@ -12,5 +14,5 @@ This package offers app for vno server-side rendering
 
 ## Example Demo
 
-
+import app from https://deno.land/x/app@app0.0.1/appImport.js
 
