@@ -4,7 +4,7 @@
 
 # Vue
 
-This package offers app for vno server-side rendering.
+This package offers Vue for Deno.
 
 It's similiar to https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js but for Vno
 
