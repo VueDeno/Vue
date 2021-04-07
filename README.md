@@ -14,5 +14,5 @@ It's similiar to https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js but for Vno
 
 ## Example Demo
 
-import Vue from https://deno.land/x/app@app0.0.1/mod.js
+import Vue from https://deno.land/x/vue_js@/mod.js
 
